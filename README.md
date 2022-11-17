@@ -5,8 +5,8 @@
 
 使用/reload开启菜单，
 
-如果没有请检查/datapack list中zip是否启用
+如果没有请检查/datapack list
 
-或者解压也可
+压缩状态使用须为次级data文件夹和mcmeta简介
 
 一定要开启作弊才能使用本数据包！
