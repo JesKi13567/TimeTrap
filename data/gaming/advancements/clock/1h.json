@@ -1,15 +1,15 @@
 {
-    "parent": "gaming:clock/win",
+    "parent": "gaming:clock/30min",
     "display": {
       "icon": {
-        "item": "minecraft:experience_bottle"
+        "item": "minecraft:diamond"
       },
       "title": {
-        "text": "超级速通玩家"
+        "text": "1 小时达成！"
       },
       "description": [
-        {"text": "在不加时间/被队友带飞的情况下完成游戏。\n","color":"white"},
-        {"text": "时间陷阱...是什么啊?","color":"gray","italic": true}
+        {"text": "你突破了 1 小时！\n","color":"white"},
+        {"text": "你搁这养老呢。","color":"gray","italic": true}
       ],
       "frame": "challenge",
       "show_toast": true,

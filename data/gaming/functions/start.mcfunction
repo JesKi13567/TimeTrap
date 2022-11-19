@@ -9,9 +9,8 @@ clear @a
 effect clear @a
 
 schedule function timing:sec1 8t replace
-schedule function timing:tick1 10t replace
+schedule function timing:tick2 10t replace
 
 effect give @a speed 5
-effect give @a saturation 3 5
 
 execute if score #tools mem matches 1 as @a[tag=on_game] at @s run function gaming:tools

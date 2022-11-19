@@ -1,2 +1,2 @@
-scoreboard players set #game_on mem 0
+scoreboard players reset #game_on mem
 reload
