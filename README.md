@@ -19,4 +19,4 @@ dwd
 
 如果没有请检查/datapack list。
 
-压缩状态使用时，次级目录须为次级data文件夹和mcmeta简介。
+压缩状态使用时，次级目录须为data文件夹和mcmeta简介。
