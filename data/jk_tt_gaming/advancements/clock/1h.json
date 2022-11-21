@@ -1,0 +1,22 @@
+{
+    "parent": "jk_tt_gaming:clock/30min",
+    "display": {
+      "icon": {
+        "item": "minecraft:diamond"
+      },
+      "title": {
+        "text": "1 小时达成！"
+      },
+      "description": [
+        {"text": "你突破了 1 小时！\n","color":"white"},
+        {"text": "你搁这养老呢。","color":"gray","italic": true}
+      ],
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "criteria": {
+      "raw": {"trigger":"minecraft:impossible"}
+    }
+}
