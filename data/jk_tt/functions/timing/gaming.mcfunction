@@ -24,8 +24,8 @@ execute if entity @p[tag=jk_tt_on_game,advancements={end/kill_dragon=true}] run 
 
 # 失败
 execute store result score #jk_tt_on_game_all jk_tt_mem if entity @a[tag=jk_tt_on_game]
-execute store result score #jk_tt_on_game_spectator jk_tt_mem if entity @a[tag=jk_tt_on_game,gamemode=spectator]
-execute if score #jk_tt_on_game_spectator jk_tt_mem >= #jk_tt_on_game_all jk_tt_mem run function jk_tt:gaming/failed
+execute store result score #jk_tt_on_game_sp jk_tt_mem if entity @a[tag=jk_tt_on_game,gamemode=spectator]
+execute if score #jk_tt_on_game_sp jk_tt_mem >= #jk_tt_on_game_all jk_tt_mem run function jk_tt:gaming/failed
 
 # 多人游戏中途加入
 tellraw @a[tag=!jk_tt_on_game] ["",{"text":"【时间陷阱】","color":"green"},"检测到您从游戏开始才加入，已为您重置背包与数据！"]

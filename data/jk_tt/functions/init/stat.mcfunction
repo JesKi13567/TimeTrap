@@ -33,8 +33,8 @@ scoreboard players set #tools jk_tt_mem 0
 scoreboard players set #tab jk_tt_mem 0
 scoreboard objectives setdisplay list
 
-#     #public      #pvp        #game_on
-#     分队模式     队内pvp     游戏是否启动
+#     #public      #pvp     #game_on
+#     分队模式     队内pvp     游戏进度
 
 scoreboard players set #public jk_tt_mem 0
 scoreboard players set #pvp jk_tt_mem 0
