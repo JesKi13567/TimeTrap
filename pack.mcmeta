@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "pack_format": 9,
+    "description": [
+      {"text": "TimeTrap ","color": "yellow"},
+      {"text": "|","color": "white"},
+      {"text": " 时间陷阱","color": "light_purple"},
+      {"text": " v1.2.1\n","color": "white"},
+      {"text": "作者：","color": "white"},
+      {"text": "JK137","color": "aqua"}
+    ]
+  }
+}
