@@ -3,6 +3,8 @@
 
 mcbbs地址：https://www.mcbbs.net/thread-1397232-1-1.html
 
+mcmod地址：https://www.mcmod.cn/class/9519.html
+
 **玩法：**
 
 你获得了一种诅咒，智子（不是）印在你瞳孔上的时间在不断流逝，
