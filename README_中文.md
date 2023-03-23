@@ -1,4 +1,6 @@
 # TimeTrap
+**中文** | [English](https://github.com/JesKi13567/TimeTrap/blob/main/README_English.md)
+
 时间陷阱数据包，适合MC的Java端1.15+版本游玩，支持多人
 
 mcbbs地址：https://www.mcbbs.net/thread-1397232-1-1.html
