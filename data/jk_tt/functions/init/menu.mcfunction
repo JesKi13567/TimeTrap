@@ -1,5 +1,5 @@
-schedule clear jk_tt:timing/sec1
-schedule clear jk_tt:timing/tick2
+schedule clear jk_tt:play/ticks/sec1
+schedule clear jk_tt:play/ticks/tick2
 
 stopsound @a
 playsound block.note_block.bell player @a
@@ -19,7 +19,8 @@ function jk_tt:init/menu/difficulty
 function jk_tt:init/menu/game
 function jk_tt:init/menu/public
 
-tellraw @a ["我是占位：",{"text":"[游戏规则]","color":"yellow","clickEvent":{"action":"run_command","value":"/function jk_tt:init/help"}},"  ",{"text":"[开始游戏]","color":"light_purple","hoverEvent":{"action":"show_text","value":"开始游戏时所有玩家传送到你的位置。"},"clickEvent":{"action":"run_command","value":"/function jk_tt:gaming/start"}},"    ",{"text":"[点我卸载]","color":"red","hoverEvent":{"action":"show_text","value":"即卸载本数据包--时间陷阱"},"clickEvent":{"action":"run_command","value":"/function jk_tt:init/unload"}}]
+tellraw @a ["我是占位：",{"text":"[如何游玩]","color":"yellow","clickEvent":{"action":"run_command","value":"/function jk_tt:init/help"}},"  ",{"text":"[开始游戏]","color":"light_purple","hoverEvent":{"action":"show_text","value":"开始游戏时所有玩家传送到你的位置。"},"clickEvent":{"action":"run_command","value":"/function jk_tt:play/start"}}]
 
 # 载入设置
+# load the settings
 execute as @a at @s run function jk_tt:init/settings

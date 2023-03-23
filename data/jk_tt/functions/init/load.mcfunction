@@ -11,4 +11,4 @@ execute if score #game_on jk_tt_mem matches 3 run tellraw @a ["\n\n\n\n\n\n\n\n\
 execute if score #game_on jk_tt_mem matches 2.. run tellraw @a [{"text":"强行再玩\n\n","color":"yellow","underlined":true,"clickEvent":{"action":"run_command","value":"/function jk_tt:init/force_reload"}},{"text":"卸载本数据包（删除计分板等）","color":"light_purple","underlined":true,"clickEvent":{"action":"run_command","value":"/function jk_tt:init/unload"}}]
 
 # 单人重进bug
-execute if score #game_on jk_tt_mem matches 3 run tellraw @a ["\n单人游戏重进出现bug？",{"text":"点我检查\n","color":"gold","underlined":true,"clickEvent":{"action":"run_command","value":"/function jk_tt:gaming/bug/check"},"hoverEvent":{"action":"show_text","value":"不要骗人哦，否则惩罚你awa"}}]
+execute if score #game_on jk_tt_mem matches 3 run tellraw @a ["\n单人游戏重进出现bug？",{"text":"点我检查\n","color":"gold","underlined":true,"clickEvent":{"action":"run_command","value":"/function jk_tt:play/bug/check"},"hoverEvent":{"action":"show_text","value":"不要骗人哦，否则惩罚你awa"}}]

@@ -4,6 +4,7 @@ scoreboard objectives remove jk_tt_m
 scoreboard objectives remove jk_tt_h
 scoreboard objectives remove jk_tt_death
 scoreboard objectives remove jk_tt_deathlimit
+scoreboard objectives remove jk_tt_timeadd
 scoreboard objectives remove jk_tt_timelimit
 scoreboard objectives remove jk_tt_sneak
 scoreboard objectives remove jk_tt_hp

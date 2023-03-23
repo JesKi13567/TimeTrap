@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "jk_tt": {
+      "trigger": "minecraft:entity_killed_player",
+      "conditions": {
+        "entity": {
+          "type": "player"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "jk_tt:play/kill/victim"
+  },
+  "requirements": [
+    [
+      "jk_tt"
+    ]
+  ]
+}

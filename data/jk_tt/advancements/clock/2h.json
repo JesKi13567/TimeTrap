@@ -1,0 +1,31 @@
+{
+  "parent": "jk_tt:clock/1h",
+  "display": {
+    "icon": {
+      "item": "minecraft:diamond"
+    },
+    "title": {
+      "text": "2 小时达成！"
+    },
+    "description": [
+      {
+        "text": "你突破了 2 小时！\n",
+        "color": "white"
+      },
+      {
+        "text": "如果这有必要的话...",
+        "color": "gray",
+        "italic": true
+      }
+    ],
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "raw": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

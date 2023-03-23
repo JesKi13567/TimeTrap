@@ -2,7 +2,7 @@
   "parent": "jk_tt:clock/root",
   "display": {
     "icon": {
-      "item": "minecraft:gold_ingot"
+      "item": "minecraft:iron_ingot"
     },
     "title": {
       "text": "30 分钟达成！"
