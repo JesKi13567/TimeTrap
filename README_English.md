@@ -4,9 +4,13 @@
 
 TimeTrap Datapack, supports MC Java 1.15+ & multiplayers
 
+Tip: Download the English version through the releases!
+
 on mcbbs:https://www.mcbbs.net/thread-1397232-1-1.html
 
 on mcmod:https://www.mcmod.cn/class/9519.html
+
+on PlanetMinecraft：https://www.planetminecraft.com/data-pack/time-trap-5891518
 
 **how to play:**
 
