@@ -31,12 +31,7 @@ scoreboard players operation #team_yellow jk_tt_timelimit += #team_yellow jk_tt_
 
 ## 重置
 ## reset
-scoreboard players reset @a[tag=jk_tt_on_game] jk_tt_timeadd
-scoreboard players reset #public jk_tt_timeadd
-scoreboard players reset #team_red jk_tt_timeadd
-scoreboard players reset #team_blue jk_tt_timeadd
-scoreboard players reset #team_green jk_tt_timeadd
-scoreboard players reset #team_yellow jk_tt_timeadd
+scoreboard players reset * jk_tt_timeadd
 
 ## 成就
 ## achievements

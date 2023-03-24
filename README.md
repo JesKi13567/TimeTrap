@@ -7,7 +7,7 @@ mcbbs地址：https://www.mcbbs.net/thread-1397232-1-1.html
 
 mcmod地址：https://www.mcmod.cn/class/9519.html
 
-PlanetMinecraft地址：https://www.planetminecraft.com/data-pack/time-trap-5891518
+PlanetMinecraft地址：https://www.planetminecraft.com/data-pack/time-trap-5891518/
 
 **玩法：**
 
@@ -34,6 +34,11 @@ PlanetMinecraft地址：https://www.planetminecraft.com/data-pack/time-trap-5891
 
 
 更新日志：
+
+v1.3.1
++ 修复了选择普通/困难模式时溢出时间。
++ 普通/困难模式分数倍率写错。
+
 
 v1.3
 + 分版本计算分数部分重写了

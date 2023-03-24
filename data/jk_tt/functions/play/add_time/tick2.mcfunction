@@ -11,7 +11,10 @@ function jk_tt:play/add_time/difficulty/check/15
 
 # 难度（按倍数乘除）
 # difficuty(divides)
-execute if score #init_diff jk_tt_mem matches 2.. run function jk_tt:play/add_time/difficulty/hard
+# *3/2=1.5
+execute if score #init_diff jk_tt_mem matches 2 run function jk_tt:play/add_time/difficulty/normal
+# /2=0.5
+execute if score #init_diff jk_tt_mem matches 3 run function jk_tt:play/add_time/difficulty/hard
 
 # 特效、显示、加分处理
 # particle, display, add time.. etc.
