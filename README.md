@@ -3,6 +3,8 @@
 
 时间陷阱数据包，适合MC的Java端1.15+版本游玩，支持多人
 
+原创: https://www.youtube.com/watch?v=ace5_aA2XkE
+
 mcbbs地址：https://www.mcbbs.net/thread-1397232-1-1.html
 
 mcmod地址：https://www.mcmod.cn/class/9519.html

@@ -6,6 +6,8 @@ TimeTrap Datapack, supports MC Java 1.15+ & multiplayers
 
 Tip: Download the English version through the releases!
 
+Original: https://www.youtube.com/watch?v=ace5_aA2XkE
+
 on mcbbs: https://www.mcbbs.net/thread-1397232-1-1.html
 
 on mcmod: https://www.mcmod.cn/class/9519.html
