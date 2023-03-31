@@ -8,24 +8,24 @@ Tip: Download the English version through the releases!
 
 Original: https://www.youtube.com/watch?v=ace5_aA2XkE
 
-on mcbbs: https://www.mcbbs.net/thread-1397232-1-1.html
+on MCBBS: https://www.mcbbs.net/thread-1397232-1-1.html
 
-on mcmod: https://www.mcmod.cn/class/9519.html
+on mcmod.cn: https://www.mcmod.cn/class/9519.html
 
 on PlanetMinecraft: https://www.planetminecraft.com/data-pack/time-trap-5891518/
 
-**how to play:**
+# How to play
 
 You gained the curse, the time that Sophon(just kidding) prints on your pupil is passing...
 
-but the way to defeat it is to kill Enderdragon?!
+but the way to defeat it is to kill Ender Dragon?!
 
 
 You need to mine ores and consume them to extend your time,
 
-Put the cooked ores into cauldron one by one or sneaking on ore blocks to consum them.
+Put the cooked ores into cauldron one by one or sneaking on ore blocks to consume them.
 
-Tips:
+# Tips
 
 Make sure the OPs could use commands,
 
@@ -37,8 +37,7 @@ If it doesn't work, type "/datapack list" to check out whether you installed it 
 
 When it is used as zip, the second content must be "data" folder and ".mcmeta" document.
 
-
-Update Notes:
+# Update Notes
 
 v1.3.1
 + Fixed the overflowing time on Normal/Hard mode.
