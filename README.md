@@ -1,9 +1,11 @@
 # TimeTrap
 **中文** | [English](https://github.com/JesKi13567/TimeTrap/blob/main/README_English.md)
 
-时间陷阱数据包，适合MC的Java端1.15+版本游玩，支持多人
+当前版本1.3.2
 
-原创: https://www.youtube.com/watch?v=ace5_aA2XkE
+时间陷阱数据包，适合MC的Java端1.15+版本游玩，支持多人。
+
+原创：https://www.youtube.com/watch?v=ace5_aA2XkE
 
 mcbbs地址：https://www.mcbbs.net/thread-1397232-1-1.html
 
@@ -11,18 +13,21 @@ mcmod地址：https://www.mcmod.cn/class/9519.html
 
 PlanetMinecraft地址：https://www.planetminecraft.com/data-pack/time-trap-5891518/
 
-**玩法：**
+==================
+
+**玩法**
 
 你获得了一种诅咒，智子（不是）印在你瞳孔上的时间在不断流逝，
 
 但你听说破除它的办法需要击败末影龙？！
 
-
 你需要挖矿并消耗矿物来维持不断流逝的时间，
 
-可以用锭丢进炼药锅内或者潜行于矿物方块上来减缓它的速度。
+可以用锭丢进炼药锅内或者潜行于矿物方块上来增加时间。
 
-注意：
+==================
+
+**如何装载数据包**
 
 游玩时请先让管理员获得使用指令权限，
 
@@ -34,8 +39,16 @@ PlanetMinecraft地址：https://www.planetminecraft.com/data-pack/time-trap-5891
 
 作为压缩包使用时，次级目录须为data文件夹和mcmeta简介。
 
+==================
 
 更新日志：
+
+v1.3.2
++ 修复了 1.16+ 矿物块上潜行不显示时间的bug。
++ 略微修改了游戏开始时给予的药效。
++ 加入初始急迫属性。
++ 新选项：达成 2 小时获胜。
++ 不分语言包了，只需在菜单选择 [lang]
 
 v1.3.1
 + 修复了选择普通/困难模式时溢出时间。

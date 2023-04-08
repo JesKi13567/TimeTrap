@@ -1,4 +1,5 @@
 # 铜锭，紫水晶
+#Copper,Amethyst
 #  20    4
 execute if score #public jk_tt_mem matches 0 as @e[type=item,nbt={Item:{id:"minecraft:copper_ingot",Count:1b}}] anchored feet at @s if block ~ ~ ~ minecraft:cauldron run scoreboard players add @p[gamemode=!spectator,tag=jk_tt_on_game] jk_tt_timeadd 20
 execute if score #public jk_tt_mem matches 1 as @e[type=item,nbt={Item:{id:"minecraft:copper_ingot",Count:1b}}] anchored feet at @s if block ~ ~ ~ minecraft:cauldron run scoreboard players add #public jk_tt_timeadd 20

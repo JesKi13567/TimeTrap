@@ -7,6 +7,9 @@ execute if score #init_punish jk_tt_mem matches 1 run scoreboard players operati
 execute if score #init_punish jk_tt_mem matches 3 run scoreboard players remove @s jk_tt_timelimit 300
 execute if score #init_punish jk_tt_mem matches 4 run scoreboard players remove @s jk_tt_timelimit 600
 
-tellraw @a [{"text":"※  ","color":"green"},{"selector":"@s"}," 只剩 ",{"score":{"name":"@s","objective":"jk_tt_deathlimit"},"color":"red"}," 条生命，",{"score":{"name":"@s","objective":"jk_tt_timelimit"},"color":"yellow"}," 秒时间了！"]
+execute unless score #lang jk_tt_mem matches 1 run tellraw @a [{"text":"※  ","color":"green"},{"selector":"@s"}," 只剩 ",{"score":{"name":"@s","objective":"jk_tt_deathlimit"},"color":"red"}," 条生命，",{"score":{"name":"@s","objective":"jk_tt_timelimit"},"color":"yellow"}," 秒时间了！"]
+execute if score #lang jk_tt_mem matches 1 run tellraw @a [{"text":"※  ","color":"green"},{"selector":"@s"}," only remains ",{"score":{"name":"@s","objective":"jk_tt_deathlimit"},"color":"red"}," life(s),",{"score":{"name":"@s","objective":"jk_tt_timelimit"},"color":"yellow"}," second(s) now!"]
+
 gamemode spectator @s[scores={jk_tt_deathlimit=..0}]
-execute if entity @s[scores={jk_tt_deathlimit=..0}] run tellraw @a [{"text":"※  ","color":"green"},{"selector":"@s"},{"text":" 用光了死亡次数！","color":"red"},{"text":"等待剩余的玩家获胜。。","color":"aqua"}]
+execute unless score #lang jk_tt_mem matches 1 if entity @s[scores={jk_tt_deathlimit=..0}] run tellraw @a [{"text":"※  ","color":"green"},{"selector":"@s"},{"text":" 用光了死亡次数！","color":"red"},{"text":"等待剩余的玩家获胜。。","color":"aqua"}]
+execute if score #lang jk_tt_mem matches 1 if entity @s[scores={jk_tt_deathlimit=..0}] run tellraw @a [{"text":"※  ","color":"green"},{"selector":"@s"},{"text":" has already used out their lifes!","color":"red"},{"text":"\nWaiting for other players..","color":"aqua"}]

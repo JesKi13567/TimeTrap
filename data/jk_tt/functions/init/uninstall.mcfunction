@@ -1,4 +1,3 @@
-scoreboard objectives remove jk_tt_mem
 scoreboard objectives remove jk_tt_s
 scoreboard objectives remove jk_tt_m
 scoreboard objectives remove jk_tt_h
@@ -17,5 +16,7 @@ team remove jk_tt_blue
 team remove jk_tt_green
 team remove jk_tt_yellow
 
-tellraw @a "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n卸载JK的时间陷阱成功！\n"
+execute unless score #lang jk_tt_mem matches 1 run tellraw @a "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n卸载JK的时间陷阱成功！\n"
+execute if score #lang jk_tt_mem matches 1 run tellraw @a "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSuccessfully uninstalled the datapack--TimeTrap!\n"
+scoreboard objectives remove jk_tt_mem
 playsound entity.villager.yes player @a

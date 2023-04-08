@@ -5,15 +5,15 @@
       "item": "minecraft:experience_bottle"
     },
     "title": {
-      "text": "超级速通玩家"
+      "text": "超级速通玩家 - Super Speed-run Player"
     },
     "description": [
       {
-        "text": "在自己不主动加时间的情况下完成游戏。\n",
+        "text": "在自己不主动加时间的情况下完成游戏。\nBeat the game without add time yourself.\n",
         "color": "white"
       },
       {
-        "text": "时间陷阱...是什么啊?",
+        "text": "时间陷阱...是什么啊?\nWhat is called...TimeTrap?",
         "color": "gray",
         "italic": true
       }

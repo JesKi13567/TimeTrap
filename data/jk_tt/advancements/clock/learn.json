@@ -5,15 +5,15 @@
       "item": "minecraft:cauldron"
     },
     "title": {
-      "text": "第一桶金"
+      "text": "第一桶金 - First Bucket of Time"
     },
     "description": [
       {
-        "text": "你学会了如何增加时间！\n",
+        "text": "你学会了如何增加时间！\nYou just learnt how to add time.\n",
         "color": "white"
       },
       {
-        "text": "即烧制好的矿丢锅里或潜行于矿石块上。",
+        "text": "即烧制好的矿丢锅里或潜行于矿石块上。\nWhich is dropping your ores into cauldron or sneaking on ore blocks.",
         "color": "gray",
         "italic": true
       }

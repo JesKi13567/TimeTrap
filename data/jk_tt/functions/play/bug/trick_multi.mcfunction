@@ -1,3 +1,4 @@
-tellraw @a [{"text":"你在骗人...既不是对抗又不是合作的“单人”模式..."},{"text":"必将狠狠地惩罚，哼","color":"red"}]
+execute unless score #lang jk_tt_mem matches 1 run tellraw @a [{"text":"你在骗人...既不是对抗又不是合作的“单人”模式..."},{"text":"必将狠狠地惩罚，哼","color":"red"}]
+execute if score #lang jk_tt_mem matches 1 run tellraw @a [{"text":"You are lying..you're even in the multiplayer mode!"},{"text":"\nI will punish you now~","color":"red"}]
 kill @a
 playsound entity.villager.no player @a

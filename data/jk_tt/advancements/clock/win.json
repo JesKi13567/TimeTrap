@@ -5,15 +5,15 @@
       "item": "minecraft:dragon_head"
     },
     "title": {
-      "text": "挑战成功"
+      "text": "挑战成功 - Mission Completed"
     },
     "description": [
       {
-        "text": "杀死了末影龙。\n",
+        "text": "杀死了末影龙。\nKilled the EnderDragon.\n",
         "color": "white"
       },
       {
-        "text": "感谢游玩本数据包！",
+        "text": "感谢游玩本数据包！\nThank you for playing this datapack!",
         "color": "gray",
         "italic": true
       }

@@ -8,21 +8,38 @@ execute if entity @s[team=jk_tt_blue] run scoreboard players add #team_blue jk_t
 execute if entity @s[team=jk_tt_green] run scoreboard players add #team_green jk_tt_timelimit 300
 execute if entity @s[team=jk_tt_yellow] run scoreboard players add #team_yellow jk_tt_timelimit 300
 
-tellraw @s[team=jk_tt_red] ["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",{"text":"你已加入红队！","color":"red"}]
-execute as @s[team=jk_tt_red] run tellraw @a[team=jk_tt_red] ["",{"selector":"@s"},"的到来为你们队伍增加了 300 秒！"]
-execute if entity @a[gamemode=spectator,team=jk_tt_red] run tellraw @a[team=jk_tt_red] "但是逝者已逝，不能复活。"
+execute unless score #lang jk_tt_mem matches 1 run tellraw @s[team=jk_tt_red] ["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",{"text":"你已加入红队！","color":"red"}]
+execute unless score #lang jk_tt_mem matches 1 as @s[team=jk_tt_red] run tellraw @a[team=jk_tt_red] ["",{"selector":"@s"},"的到来为你们队伍增加了 300 秒！"]
+execute unless score #lang jk_tt_mem matches 1 if entity @a[gamemode=spectator,team=jk_tt_red] run tellraw @a[team=jk_tt_red] "但是逝者已逝，不能复活。"
 
-tellraw @s[team=jk_tt_blue] ["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",{"text":"你已加入蓝队！","color":"blue"}]
-execute as @s[team=jk_tt_blue] run tellraw @a[team=jk_tt_blue] ["",{"selector":"@s"},"的到来为你们队伍增加了 300 秒！"]
-execute if entity @a[gamemode=spectator,team=jk_tt_blue] run tellraw @a[team=jk_tt_blue] "但是逝者已逝，不能复活。"
+execute unless score #lang jk_tt_mem matches 1 run tellraw @s[team=jk_tt_blue] ["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",{"text":"你已加入蓝队！","color":"blue"}]
+execute unless score #lang jk_tt_mem matches 1 as @s[team=jk_tt_blue] run tellraw @a[team=jk_tt_blue] ["",{"selector":"@s"},"的到来为你们队伍增加了 300 秒！"]
+execute unless score #lang jk_tt_mem matches 1 if entity @a[gamemode=spectator,team=jk_tt_blue] run tellraw @a[team=jk_tt_blue] "但是逝者已逝，不能复活。"
 
-tellraw @s[team=jk_tt_green] ["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",{"text":"你已加入绿队！","color":"green"}]
-execute as @s[team=jk_tt_green] run tellraw @a[team=jk_tt_green] ["",{"selector":"@s"},"的到来为你们队伍增加了 300 秒！"]
-execute if entity @a[gamemode=spectator,team=jk_tt_green] run tellraw @a[team=jk_tt_green] "但是逝者已逝，不能复活。"
+execute unless score #lang jk_tt_mem matches 1 run tellraw @s[team=jk_tt_green] ["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",{"text":"你已加入绿队！","color":"green"}]
+execute unless score #lang jk_tt_mem matches 1 as @s[team=jk_tt_green] run tellraw @a[team=jk_tt_green] ["",{"selector":"@s"},"的到来为你们队伍增加了 300 秒！"]
+execute unless score #lang jk_tt_mem matches 1 if entity @a[gamemode=spectator,team=jk_tt_green] run tellraw @a[team=jk_tt_green] "但是逝者已逝，不能复活。"
 
-tellraw @s[team=jk_tt_yellow] ["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",{"text":"你已加入黄队！","color":"yellow"}]
-execute as @s[team=jk_tt_yellow] run tellraw @a[team=jk_tt_yellow] ["",{"selector":"@s"},"的到来为你们队伍增加了 300 秒！"]
-execute if entity @a[gamemode=spectator,team=jk_tt_yellow] run tellraw @a[team=jk_tt_yellow] "但是逝者已逝，不能复活。"
+execute unless score #lang jk_tt_mem matches 1 run tellraw @s[team=jk_tt_yellow] ["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",{"text":"你已加入黄队！","color":"yellow"}]
+execute unless score #lang jk_tt_mem matches 1 as @s[team=jk_tt_yellow] run tellraw @a[team=jk_tt_yellow] ["",{"selector":"@s"},"的到来为你们队伍增加了 300 秒！"]
+execute unless score #lang jk_tt_mem matches 1 if entity @a[gamemode=spectator,team=jk_tt_yellow] run tellraw @a[team=jk_tt_yellow] "但是逝者已逝，不能复活。"
+
+
+execute if score #lang jk_tt_mem matches 1 run tellraw @s[team=jk_tt_red] ["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",{"text":"Now you joined in Team Red!","color":"red"}]
+execute if score #lang jk_tt_mem matches 1 as @s[team=jk_tt_red] run tellraw @a[team=jk_tt_red] ["",{"selector":"@s"}," added 300 seconds for joining in your team!"]
+execute if score #lang jk_tt_mem matches 1 if entity @a[gamemode=spectator,team=jk_tt_red] run tellraw @a[team=jk_tt_red] "..but the death could not back to life."
+
+execute if score #lang jk_tt_mem matches 1 run tellraw @s[team=jk_tt_blue] ["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",{"text":"Now you joined in Team Blue!","color":"blue"}]
+execute if score #lang jk_tt_mem matches 1 as @s[team=jk_tt_blue] run tellraw @a[team=jk_tt_blue] ["",{"selector":"@s"}," added 300 seconds for joining in your team!"]
+execute if score #lang jk_tt_mem matches 1 if entity @a[gamemode=spectator,team=jk_tt_blue] run tellraw @a[team=jk_tt_blue] "..but the death could not back to life."
+
+execute if score #lang jk_tt_mem matches 1 run tellraw @s[team=jk_tt_green] ["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",{"text":"Now you joined in Team Green!","color":"green"}]
+execute if score #lang jk_tt_mem matches 1 as @s[team=jk_tt_green] run tellraw @a[team=jk_tt_green] ["",{"selector":"@s"}," added 300 seconds for joining in your team!"]
+execute if score #lang jk_tt_mem matches 1 if entity @a[gamemode=spectator,team=jk_tt_green] run tellraw @a[team=jk_tt_green] "..but the death could not back to life."
+
+execute if score #lang jk_tt_mem matches 1 run tellraw @s[team=jk_tt_yellow] ["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",{"text":"Now you joined in Team Yellow!","color":"yellow"}]
+execute if score #lang jk_tt_mem matches 1 as @s[team=jk_tt_yellow] run tellraw @a[team=jk_tt_yellow] ["",{"selector":"@s"}," added 300 seconds for joining in your team!"]
+execute if score #lang jk_tt_mem matches 1 if entity @a[gamemode=spectator,team=jk_tt_yellow] run tellraw @a[team=jk_tt_yellow] "..but the death could not back to life."
 
 tag @s[team=!jk_tt_public] add jk_tt_on_game
 scoreboard players reset @s jk_tt_team_tri

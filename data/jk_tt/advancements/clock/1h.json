@@ -5,20 +5,20 @@
       "item": "minecraft:gold_ingot"
     },
     "title": {
-      "text": "1 小时达成！"
+      "text": "1 小时达成！ - 1 Hour Completed!"
     },
     "description": [
       {
-        "text": "你突破了 1 小时！\n",
+        "text": "你突破了 1 小时！\nYou reached to 1 hour!\n",
         "color": "white"
       },
       {
-        "text": "你搁这养老呢。",
+        "text": "你搁这养老呢。\nCan't you do anything meaningful?",
         "color": "gray",
         "italic": true
       }
     ],
-    "frame": "challenge",
+    "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false

@@ -1,4 +1,5 @@
 # 绿宝石，铁锭，金锭，钻石，红石，青金石
+#Emerald,Iron,Gold,Diamond,Redstone,Lapis
 #   30    40    60   80   10    12
 
 ## 矿石物品

@@ -2,18 +2,18 @@
   "parent": "jk_tt:clock/1h",
   "display": {
     "icon": {
-      "item": "minecraft:diamond"
+      "item": "minecraft:gold_block"
     },
     "title": {
-      "text": "2 小时达成！"
+      "text": "2 小时达成！ - 2 Hours Completed!"
     },
     "description": [
       {
-        "text": "你突破了 2 小时！\n",
+        "text": "你突破了 2 小时！\nYou reached to 2 hours!\n",
         "color": "white"
       },
       {
-        "text": "如果这有必要的话...",
+        "text": "好吧，你赢了。\nOK, you win.",
         "color": "gray",
         "italic": true
       }

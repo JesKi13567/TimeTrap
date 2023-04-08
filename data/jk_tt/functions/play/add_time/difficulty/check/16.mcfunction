@@ -1,4 +1,5 @@
 # 下界合金锭
+# Netherite
 #   480
 execute if score #public jk_tt_mem matches 0 as @e[type=item,nbt={Item:{id:"minecraft:netherite_ingot",Count:1b}}] anchored feet at @s if block ~ ~ ~ minecraft:cauldron run scoreboard players add @p[gamemode=!spectator,tag=jk_tt_on_game] jk_tt_timeadd 480
 execute if score #public jk_tt_mem matches 1 as @e[type=item,nbt={Item:{id:"minecraft:netherite_ingot",Count:1b}}] anchored feet at @s if block ~ ~ ~ minecraft:cauldron run scoreboard players add #public jk_tt_timeadd 480

@@ -27,20 +27,23 @@ scoreboard players set #init_life jk_tt_mem 1
 scoreboard players set #init_punish jk_tt_mem 1
 scoreboard players set #init_diff jk_tt_mem 1
 
-#  #keep_inv   #night_vision   #tools      #tab
-#  死亡不掉落     永久夜视      初始工具   tab显示分数
+#  #keep_inv   #night_vision   #haste     #tools      #tab
+#  死亡不掉落     永久夜视      永久急迫    初始工具   tab显示分数
 scoreboard players set #keep_inv jk_tt_mem 0
 scoreboard players set #night_vision jk_tt_mem 0
+scoreboard players set #haste jk_tt_mem 0
 scoreboard players set #tools jk_tt_mem 0
 scoreboard players set #tab jk_tt_mem 0
 scoreboard objectives setdisplay list
 
-#     #public      #pvp     #game_on
-#     分队模式     队内pvp    游戏进度
+#     #public      #pvp     #game_on   #mode   #lang
+#     分队模式     队内pvp    游戏进度  游戏模式  语言
 
 scoreboard players set #public jk_tt_mem 0
 scoreboard players set #pvp jk_tt_mem 0
 scoreboard players reset #game_on jk_tt_mem
+scoreboard players reset #mode jk_tt_mem
+scoreboard players reset #lang jk_tt_mem
 
 # 计算相关
 scoreboard players set #1 jk_tt_mem 1

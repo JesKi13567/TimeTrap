@@ -8,7 +8,9 @@ execute if score #init_punish jk_tt_mem matches 1 run scoreboard players operati
 execute if score #init_punish jk_tt_mem matches 3 run scoreboard players remove #team_blue jk_tt_timelimit 300
 execute if score #init_punish jk_tt_mem matches 4 run scoreboard players remove #team_blue jk_tt_timelimit 600
 
-tellraw @a [{"text":"※  都怪 ","color":"aqua"},{"selector":"@s"},"，",{"text":"蓝队 ","color":"blue","bold":true},"只剩 ",{"score":{"name":"#team_blue","objective":"jk_tt_deathlimit"},"color":"blue"}," 条生命，",{"score":{"name":"#team_blue","objective":"jk_tt_timelimit"},"color":"blue"}," 秒时间了！"]
+execute unless score #lang jk_tt_mem matches 1 run tellraw @a [{"text":"※  都怪 ","color":"aqua"},{"selector":"@s"},"，",{"text":"蓝队 ","color":"blue","bold":true},"只剩 ",{"score":{"name":"#team_blue","objective":"jk_tt_deathlimit"},"color":"blue"}," 条生命，",{"score":{"name":"#team_blue","objective":"jk_tt_timelimit"},"color":"blue"}," 秒时间了！"]
+execute if score #lang jk_tt_mem matches 1 run tellraw @a [{"text":"※  Because of ","color":"aqua"},{"selector":"@s"},",",{"text":"Team Blue ","color":"blue","bold":true},"only remains ",{"score":{"name":"#team_blue","objective":"jk_tt_deathlimit"},"color":"blue"}," life(s),",{"score":{"name":"#team_blue","objective":"jk_tt_timelimit"},"color":"blue"}," second(s) now!"]
 
 execute if score #team_blue jk_tt_deathlimit matches ..0 run gamemode spectator @a[team=jk_tt_blue]
-execute if score #team_blue jk_tt_deathlimit matches ..0 run tellraw @a [{"text":"※  ","color":"aqua"},{"text":"蓝队 ","color":"blue","bold":true},{"text":"用光了死亡次数！"}]
+execute unless score #lang jk_tt_mem matches 1 if score #team_blue jk_tt_deathlimit matches ..0 run tellraw @a [{"text":"※  ","color":"aqua"},{"text":"蓝队 ","color":"blue","bold":true},{"text":"用光了死亡次数！"}]
+execute if score #lang jk_tt_mem matches 1 if score #team_blue jk_tt_deathlimit matches ..0 run tellraw @a [{"text":"※  ","color":"aqua"},{"text":"Team Blue ","color":"blue","bold":true},{"text":"has already used out their lifes!"}]

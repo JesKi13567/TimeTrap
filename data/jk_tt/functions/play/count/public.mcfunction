@@ -18,7 +18,8 @@ scoreboard players operation #public jk_tt_h = #public jk_tt_timelimit
 scoreboard players operation #public jk_tt_h /= #60 jk_tt_mem
 scoreboard players operation #public jk_tt_h /= #60 jk_tt_mem
 
-execute if score #public jk_tt_timelimit matches ..0 run tellraw @a [{"text":"※  所有玩家的怀表都停了！","color":"white"}]
+execute unless score #lang jk_tt_mem matches 1 if score #public jk_tt_timelimit matches ..0 run tellraw @a [{"text":"※  所有玩家的怀表都停了！","color":"white"}]
+execute if score #lang jk_tt_mem matches 1 if score #public jk_tt_timelimit matches ..0 run tellraw @a [{"text":"※  All of you guys has run out of your time!","color":"white"}]
 execute if score #public jk_tt_timelimit matches ..0 run gamemode spectator @a
 
 title @a[gamemode=!spectator] title ""

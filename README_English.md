@@ -1,12 +1,13 @@
 # TimeTrap
-
 [中文](https://github.com/JesKi13567/TimeTrap/blob/main/README.md) | **English**
 
-TimeTrap Datapack, supports MC Java 1.15+ & multiplayers
+Current version 1.3.2
+
+TimeTrap Datapack, supports MC Java Edition 1.15+ & multiplayers.
 
 Tip: Download the English version through the releases!
 
-Original: https://www.youtube.com/watch?v=ace5_aA2XkE
+Inspired by: https://www.youtube.com/watch?v=ace5_aA2XkE
 
 on mcbbs: https://www.mcbbs.net/thread-1397232-1-1.html
 
@@ -14,18 +15,21 @@ on mcmod: https://www.mcmod.cn/class/9519.html
 
 on PlanetMinecraft: https://www.planetminecraft.com/data-pack/time-trap-5891518/
 
-**how to play:**
+==================
+
+**How To Play**
 
 You gained the curse, the time that Sophon(just kidding) prints on your pupil is passing...
 
 but the way to defeat it is to kill Enderdragon?!
 
-
-You need to mine ores and consume them to extend your time,
+You need to mine ores and consume them to add your time,
 
 Put the cooked ores into cauldron one by one or sneaking on ore blocks to consum them.
 
-Tips:
+==================
+
+**How To Use The Pack**
 
 Make sure the OPs could use commands,
 
@@ -37,8 +41,16 @@ If it doesn't work, type "/datapack list" to check out whether you installed it 
 
 When it is used as zip, the second content must be "data" folder and ".mcmeta" document.
 
+==================
 
 Update Notes:
+
+v1.3.2
++ Fixed the bug: sneaking on blocks doesn't display the scores in 1.16+.
++ Modified the effects that given in the beginning.
++ Add new attributor: haste
++ New playmode: First reach to 2 hours.
++ Now we don't distinguish the packs by languages, just select [lang] on menu.
 
 v1.3.1
 + Fixed the overflowing time on Normal/Hard mode.

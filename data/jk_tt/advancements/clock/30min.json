@@ -2,18 +2,18 @@
   "parent": "jk_tt:clock/root",
   "display": {
     "icon": {
-      "item": "minecraft:iron_ingot"
+      "item": "minecraft:gold_nugget"
     },
     "title": {
-      "text": "30 分钟达成！"
+      "text": "30 分钟达成！ - 30 Mins Completed!"
     },
     "description": [
       {
-        "text": "你突破了 30 分钟！\n",
+        "text": "你突破了 30 分钟！\nYou reached to 30 mins!\n",
         "color": "white"
       },
       {
-        "text": "这下时间拦不住你了。",
+        "text": "这下时间拦不住你了。\nNow the time won't stop you now.",
         "color": "gray",
         "italic": true
       }

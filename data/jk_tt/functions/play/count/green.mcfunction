@@ -18,7 +18,8 @@ scoreboard players operation #team_green jk_tt_h = #team_green jk_tt_timelimit
 scoreboard players operation #team_green jk_tt_h /= #60 jk_tt_mem
 scoreboard players operation #team_green jk_tt_h /= #60 jk_tt_mem
 
-execute if score #team_green jk_tt_timelimit matches ..0 run tellraw @a [{"text":"※  绿队玩家的怀表都停了！","color":"green"}]
+execute unless score #lang jk_tt_mem matches 1 if score #team_green jk_tt_timelimit matches ..0 run tellraw @a [{"text":"※  绿队玩家的怀表都停了！","color":"green"}]
+execute if score #lang jk_tt_mem matches 1 if score #team_green jk_tt_timelimit matches ..0 run tellraw @a [{"text":"※  Team Green has run out of their time!","color":"green"}]
 execute if score #team_green jk_tt_timelimit matches ..0 run gamemode spectator @a[team=jk_tt_green]
 
 title @a[team=jk_tt_green] title ""
