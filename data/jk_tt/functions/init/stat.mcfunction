@@ -16,8 +16,20 @@ scoreboard objectives add jk_tt_sneak minecraft.custom:sneak_time "潜行检测"
 scoreboard objectives add jk_tt_hp health "♥"
 scoreboard objectives add jk_tt_team dummy "队伍分数"
 scoreboard objectives add jk_tt_team_tri trigger "队伍触发"
+scoreboard objectives add jk_tt_record dummy "分数记录"
 
 ## 虚拟实体分数 -> jk_tt_mem
+
+# 矿物分数
+scoreboard players set #copper jk_tt_mem 10
+scoreboard players set #emerald jk_tt_mem 15
+scoreboard players set #iron jk_tt_mem 20
+scoreboard players set #gold jk_tt_mem 30
+scoreboard players set #diamond jk_tt_mem 40
+scoreboard players set #netherite jk_tt_mem 240
+scoreboard players set #amethyst jk_tt_mem 2
+scoreboard players set #redstone jk_tt_mem 5
+scoreboard players set #lapis jk_tt_mem 6
 
 # #init_time   #init_life   #init_punish   #init_diff
 #  初始时间      初始生命       死亡惩罚       游戏难度
@@ -50,6 +62,7 @@ scoreboard players set #1 jk_tt_mem 1
 scoreboard players set #2 jk_tt_mem 2
 scoreboard players set #3 jk_tt_mem 3
 scoreboard players set #4 jk_tt_mem 4
+scoreboard players set #9 jk_tt_mem 9
 scoreboard players set #60 jk_tt_mem 60
 scoreboard players set #temp jk_tt_mem 0
 

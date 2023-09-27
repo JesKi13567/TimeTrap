@@ -2,12 +2,35 @@
   "pack": {
     "pack_format": 9,
     "description": [
-      {"text": "TimeTrap ","color": "yellow"},
-      {"text": "|","color": "white"},
-      {"text": " 时间陷阱","color": "light_purple"},
-      {"text": " v1.3.2\n","color": "white"},
-      {"text": "作者：","color": "white"},
-      {"text": "JK137","color": "aqua"}
+      {
+        "text": "TimeTrap ",
+        "color": "yellow"
+      },
+      {
+        "text": "|",
+        "color": "white"
+      },
+      {
+        "text": " 时间陷阱",
+        "color": "light_purple"
+      },
+      {
+        "text": " v1.4\n",
+        "color": "white"
+      },
+      {
+        "text": "作者：",
+        "color": "white"
+      },
+      {
+        "text": "JK137",
+        "color": "aqua",
+        "underlined": true,
+        "clickEvent": {
+          "action": "open_url",
+          "value": "https://github.com/JesKi13567"
+        }
+      }
     ]
   }
 }

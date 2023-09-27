@@ -18,17 +18,10 @@ execute store result score #jk_tt_on_game_all jk_tt_mem if entity @a[tag=jk_tt_o
 execute store result score #jk_tt_on_game_sp jk_tt_mem if entity @a[tag=jk_tt_on_game,gamemode=spectator]
 execute if score #jk_tt_on_game_sp jk_tt_mem >= #jk_tt_on_game_all jk_tt_mem run function jk_tt:play/failed
 
-# 多人游戏中途加入
-# join when the multiplayer-mode starts
-execute unless score #lang jk_tt_mem matches 1 run tellraw @a[tag=!jk_tt_on_game] ["",{"text":"【时间陷阱】","color":"green"},"检测到您从游戏开始才加入，已为您重置背包与数据！"]
-execute if score #lang jk_tt_mem matches 1 run tellraw @a[tag=!jk_tt_on_game] ["",{"text":"【TimeTrap】","color":"green"},"You joined the world when the game started, so we cleared your inventory!"]
-clear @a[tag=!jk_tt_on_game]
-effect clear @a[tag=!jk_tt_on_game]
-execute if score #tools jk_tt_mem matches 1 as @a[tag=!jk_tt_on_game] at @s run function jk_tt:play/tools
-execute if score #public jk_tt_mem matches 0 as @a[tag=!jk_tt_on_game] at @s run function jk_tt:init/settings/teams/set/solo
-execute if score #public jk_tt_mem matches 0..1 run team join jk_tt_public @a[team=!jk_tt_public]
-execute if score #public jk_tt_mem matches 0..1 run tag @a[team=jk_tt_public,tag=!jk_tt_on_game] add jk_tt_on_game
-execute if score #public jk_tt_mem matches 2.. run function jk_tt:play/team/choose
+# 新玩家中途加入（提示仅一次）
+# new players joining when the game has started (tips for only once)
+execute as @a[tag=!jk_tt_on_game,team=!jk_tt_public] run function jk_tt:play/started
+execute if score #public jk_tt_mem matches 2.. as @a[tag=!jk_tt_on_game,scores={jk_tt_team_tri=1..}] run function jk_tt:play/team/join
 
 # 夜视 & 急迫
 # night vision & haste

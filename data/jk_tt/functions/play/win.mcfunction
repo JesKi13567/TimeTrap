@@ -21,6 +21,7 @@ execute unless score #lang jk_tt_mem matches 1 run title @a title {"text":"æ¸¸æˆ
 execute if score #lang jk_tt_mem matches 1 run tellraw @a [{"text":"\nCongratulations,","color":"yellow"},{"text":" game completed. \n","color":"gold"},"It costs:",{"score":{"name":"#game_time","objective":"jk_tt_h"},"color":"gold"},{"text":":","color":"aqua"},{"score":{"name":"#game_time","objective":"jk_tt_m"},"color":"gold"},{"text":":","color":"aqua"},{"score":{"name":"#game_time","objective":"jk_tt_s"},"color":"gold"}]
 execute if score #lang jk_tt_mem matches 1 run title @a title {"text":"Game Completed","color":"gold"}
 
+scoreboard objectives setdisplay sidebar jk_tt_record
 title @a times 10 80 10
 title @a subtitle ""
 execute unless score #mode jk_tt_mem matches 1.. run advancement grant @a[tag=jk_tt_on_game,gamemode=survival] only jk_tt:clock/win

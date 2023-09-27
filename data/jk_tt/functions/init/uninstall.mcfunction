@@ -9,6 +9,7 @@ scoreboard objectives remove jk_tt_sneak
 scoreboard objectives remove jk_tt_hp
 scoreboard objectives remove jk_tt_team
 scoreboard objectives remove jk_tt_team_tri
+scoreboard objectives remove jk_tt_record
 tag @a remove jk_tt_on_game
 team remove jk_tt_public
 team remove jk_tt_red

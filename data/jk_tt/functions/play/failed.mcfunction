@@ -5,6 +5,7 @@ execute unless score #lang jk_tt_mem matches 1 run title @a title {"text":"æ¸¸æˆ
 execute if score #lang jk_tt_mem matches 1 run tellraw @a [{"text":"\nCongratulations,","color":"yellow"},{"text":" the game failed.\n","color":"red"}]
 execute if score #lang jk_tt_mem matches 1 run title @a title {"text":"Game Failed","color":"red"}
 
+scoreboard objectives setdisplay sidebar jk_tt_record
 title @a subtitle ""
 stopsound @a
 playsound entity.ender_dragon.growl player @a 0 -1000000 0 72000 1

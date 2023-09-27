@@ -1,7 +1,7 @@
 execute if score #public jk_tt_mem matches 0..1 run team join jk_tt_public @a
 
 # 对抗模式设置
-execute if score #public jk_tt_mem matches 0 run function jk_tt:init/settings/teams/set/solo
+execute if score #public jk_tt_mem matches 0 as @a run function jk_tt:init/settings/teams/set/solo
 
 # 合作模式设置
 execute if score #public jk_tt_mem matches 1 run function jk_tt:init/settings/teams/set/public
