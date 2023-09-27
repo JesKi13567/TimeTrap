@@ -12,5 +12,3 @@ function jk_tt:play/add_time/difficulty/15
 # 特效、显示、加分处理
 # particle, display, add time.. etc.
 function jk_tt:play/add_time/special/global
-
-scoreboard players reset @a jk_tt_sneak
